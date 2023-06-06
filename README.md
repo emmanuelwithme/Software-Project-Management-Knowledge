@@ -88,8 +88,8 @@ Testing stages:
 - Incremental: Plan-driven or Agile.
 - Integration and configuration: 現有元件組裝而成。
 
-## 瀑布模型
-按照順序進行，每個階段完成後才能進入下一個階段。這樣會造成難以變更需求。
+## 各種生命週期模型的困難
+瀑布模型: 按照順序進行，每個階段完成後才能進入下一個階段。這樣會造成難以變更需求。
 
 增量式開發的兩個問題: 管理者無法清楚地了解開發的進度和成果、程式重構困難。
 
@@ -140,13 +140,29 @@ Coping with changing requirements:
 9. 可持續節奏: 避免過度加班，保持生產力和代碼品質。
 10. 現場客戶: 客戶代表全職支援團隊，提供需求和反饋。
 
-## Scrum專案管理方式
-1. Product backlog: 待開發功能清單、優先重要性排序、User Story、Product Owner創建與維護、每次Sprint不斷被修正與更新。
-2. Sprint Planning & Sprint Backlog: 決定這次Sprint要從Product backlog中挑出哪些項目放進此次Sprint Backlog，並列出針對每個Sprint backlog User Story更詳細的tasks，依照每個task難度估計需要投入的工時，最後製作燃盡圖(Burn-down chart)來管理進度。
-3. Scrum工作領取/指派。
-4. 每日站立會議: 15分鐘以內結束，只有Scrum Master, Team Members參加，討論3個問題: 昨天你做了甚麼? 、今天你要做甚麼? 、有甚麼困難需要幫助?。
-5. Sprint Review (展示和驗收): 全部人都要參加，Demo這次Sprint的成果，如果不盡理想，可以把要修改的功能、修改的需求放到Product Backlog。
-6. Sprint Retrospective (回顧): 在每個Sprint結束時進行回顧，討論做得好、做得不好以及如何改進。
+## Scrum專案管理方式:
+
+1. **Product backlog**:
+   - 待開發功能清單、優先重要性排序、User Story(As a (role) I want (feature) So that (benefit))
+   - Product Owner創建與維護
+   - 每次Sprint不斷被修正與更新
+
+2. **Sprint Planning & Sprint Backlog**:
+   - 決定這次Sprint要從Product backlog中挑出哪些項目放進此次Sprint Backlog
+   - 並列出針對每㇐個Sprint backlog User Story更詳細的tasks(要做的GUI, Back-end service, DB structure, Unit test, Function test......)
+   - 依照每個task難度估計需要投入的工時
+   - 最後製作燃盡圖(Burn-down chart)來管理進度，Burn-down chart的橫軸是時間(Days)，縱軸是task數量或是完成此次sprint的tasks剩餘總工時
+
+3. **Scrum工作領取/指派**
+4. **每日站立會議**:
+   - 15分鐘以內結束，只有Scrum Master, Team Members參加，Product Owner不用參加
+   - 要討論3個問題: 昨天你做了甚麼? 、今天你要做甚麼? 、有甚麼困難需要幫助?
+   - 這是Team Members彼此之間狀態同步，不是對Scrum Master的進度報告
+
+5. **Sprint Review (展示和驗收)**:
+   - 全部人都要參加
+   - Demo這次Sprint的成果
+   - 如果不盡理想，可以把要修改的功能、修改的需求放到Product Backlog (Refine Product Backlog )
 
 ---
 
